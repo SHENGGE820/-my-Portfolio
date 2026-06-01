@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="謝道昇的網頁作品集 — 大學專題、個人網站、Python 打卡系統與師生管理 Web App" />
+  <title>謝道昇 · 作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#">謝道昇</a>
+    <nav class="nav">
+      <a href="#works">作品</a>
+      <a href="#about">關於</a>
+      <a href="https://github.com/shengge820" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero__eyebrow">Web Portfolio</p>
+      <h1 class="hero__title">
+        網頁<span class="hero__accent">作品</span>集
+      </h1>
+      <p class="hero__lead">
+        從大學專題遊戲官網、人生第一個個人網站，到 Python 打卡程式與完整的師生 Web 管理系統——
+        這裡是我一路累積的專案精選。
+      </p>
+      <a class="hero__cta" href="#works">瀏覽作品 ↓</a>
+    </section>
+
+    <section id="works" class="works">
+      <div class="section-head">
+        <h2>精選作品</h2>
+        <p>七個專案，涵蓋專題展示、個人網頁、後端程式與開發中的作品。</p>
+      </div>
+
+      <div class="works-grid">
+        <article class="work-card" data-theme="fantasy">
+          <a class="work-card__link" href="https://shengge820.github.io/-The-Adventure-of-Atiliia/" target="_blank" rel="noopener noreferrer">
+            <div class="work-card__media">
+              <img src="assets/previews/atiliia.png" alt="艾特力亞的冒險 網頁預覽" loading="lazy" />
+              <span class="work-card__overlay">前往網站 →</span>
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span>大學專題</span>
+                <span>前端開發</span>
+              </div>
+              <h3>艾特力亞的冒險</h3>
+              <p>本網站為大學專題遊戲所製作的官方網站，由本人獨立完成整體規劃與前端開發。主要提供遊戲世界觀、角色設定與專題理念等內容，作為專題成果的對外展示平台。</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card" data-theme="personal">
+          <a class="work-card__link" href="https://shengge820.github.io/shengge/" target="_blank" rel="noopener noreferrer">
+            <div class="work-card__media">
+              <img src="assets/previews/shengge.png" alt="謝道昇個人網站預覽" loading="lazy" />
+              <span class="work-card__overlay">前往網站 →</span>
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span>第一個作品</span>
+                <span>自我介紹</span>
+              </div>
+              <h3>謝道昇個人網站</h3>
+              <p>這是我人生第一個個人網站——從零開始摸索 HTML 與 CSS 的初試成果。版面或許還不夠精緻，但對我來說是重要的起點，記錄了最初把自我介紹放上網頁的過程。</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card work-card--static" data-theme="python">
+          <div class="work-card__inner">
+            <div class="work-card__media">
+              <img src="assets/previews/ai-punch-system.png" alt="AI 新秀計畫簡易打卡系統預覽" loading="lazy" />
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span>Python</span>
+                <span>AI 新秀計畫</span>
+              </div>
+              <h3>簡易打卡系統</h3>
+              <p>本專案為 AI 新秀計畫實作的第一階段：以 Python 開發的簡易打卡系統，設計基本打卡流程與資料紀錄功能，並將打卡資訊傳送至 Firebase 雲端資料庫儲存，作為後續查詢與管理的資料來源。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card--static" data-theme="renpy">
+          <div class="work-card__inner">
+            <div class="work-card__media">
+              <img src="assets/previews/renpy-ttd.png" alt="自製戀愛文字冒險遊戲（開發中）" loading="lazy" />
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span>Ren'Py</span>
+                <span>開發中</span>
+              </div>
+              <h3>校園戀愛文字冒險</h3>
+              <p>自製戀愛文字冒險遊戲（開發中，2026/3 起持續進行）。使用 Ren'Py 開發，負責遊戲系統設計與實作分支劇情系統，透過玩家選擇影響流程與事件發展，並建立角色好感度變數系統。同步開發校園地圖探索（hotspot interaction）與 Day-based 推進架構，並整合 AI 生成之角色立繪、背景/CG 與音效、BGM，提升互動體驗。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-theme="line">
+          <a class="work-card__link" href="https://line.me/R/ti/p/@106xbhsf?ts=03151804&oat_content=url" target="_blank" rel="noopener noreferrer">
+            <div class="work-card__media">
+              <img src="assets/previews/line-bot-ai.png" alt="LINE 聊天機器人（AI 新秀計畫，部分功能修正中）" loading="lazy" />
+              <span class="work-card__overlay">前往體驗 →</span>
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span>LINE Bot</span>
+                <span>開發中</span>
+              </div>
+              <h3>LINE 聊天機器人</h3>
+              <p>AI 新秀計畫自由專題應用（2026/3~2026/4）。使用 LINE Messaging API 與系統資料串接，讓使用者可透過 LINE 查詢資訊與進行互動，提升系統使用便利性。目前仍有小 bug，持續修正與優化聊天流程。</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card" data-theme="student">
+          <a class="work-card__link" href="https://shengge820.github.io/hitcard-web/student.html" target="_blank" rel="noopener noreferrer">
+            <div class="work-card__media">
+              <img src="assets/previews/hitcard-student.png" alt="學生打卡系統預覽" loading="lazy" />
+              <span class="work-card__overlay">前往網站 →</span>
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span>Web App</span>
+                <span>學生端</span>
+              </div>
+              <h3>學生打卡系統</h3>
+              <p>支援登入、上下課打卡、月統計、請假申請、作業上傳與密碼管理，完整的學生自助服務介面。</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card" data-theme="teacher">
+          <a class="work-card__link" href="https://shengge820.github.io/hitcard-web/teacher.html" target="_blank" rel="noopener noreferrer">
+            <div class="work-card__media">
+              <img src="assets/previews/hitcard-teacher.png" alt="教師管理後台預覽" loading="lazy" />
+              <span class="work-card__overlay">前往網站 →</span>
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span>Web App</span>
+                <span>教師端</span>
+              </div>
+              <h3>教師管理後台</h3>
+              <p>與學生端配套的後台系統，管理出席、學生資料、上課日、請假審核與作業繳交紀錄。</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__inner">
+        <div class="about__text">
+          <h2>關於這個作品集</h2>
+          <p>
+            這些作品展現了我在網頁設計、前端開發與後端程式上的探索——
+            從專題展示與第一個個人網站，到能實際運作的打卡與管理系統。
+          </p>
+          <p>
+            每個專案都是不同階段的學習成果，也會隨著技術成長持續更新與擴充。
+          </p>
+        </div>
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__num">7</span>
+            <span class="stat__label">公開作品</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">3</span>
+            <span class="stat__label">完整系統</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">∞</span>
+            <span class="stat__label">持續更新</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 謝道昇 · 以 GitHub Pages 部署</p>
+    <a href="https://github.com/shengge820" target="_blank" rel="noopener noreferrer">github.com/shengge820</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
